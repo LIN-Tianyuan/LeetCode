@@ -11,12 +11,21 @@ It is because arrays have contiguous addresses in memory space that we inevitabl
 
 <b> Elements of an array cannot be deleted, only overwritten. </b>
 
-### 1. Binary search
+### 1. Binary search(704)
 
 Given an array of integers nums which is sorted in ascending order, and an integer target, write a function to search target in nums. If target exists, then return its index. Otherwise, return -1.
 
 #### Idea
 The premise of this question is that the array is an ordered array, at the same time, the topic also emphasizes that there are no repetitive elements in the array, because once there are repetitive elements, the use of bisection to find the return of the element subscripts may not be unique, these are the prerequisites for the use of the method of binary search.
+
+#### Code
+Time complexity: O(log n)
+Space complexity: O(1)
+
+### 2. Search Insert Position(35)
+Given a sorted array of distinct integers and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.
+
+
 
 
 
