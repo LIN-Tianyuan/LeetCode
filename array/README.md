@@ -41,7 +41,17 @@ Given an array of integers nums sorted in non-decreasing order, find the startin
 
 If target is not found in the array, return [-1, -1].
 
+#### Idea
+To find the left and right boundaries of target in an array, there are three cases as follows:
 
+Case 1: target is on the right or left side of the array range, for example, array {3, 4, 5}, target is 2 or array {3, 4, 5}, target is 6, then it should return {-1, -1}.
+Case 2: target is in the range of the array, and there is no target in the array, for example, array {3, 6, 7}, target is 5, then it should return {-1, -1}.
+Case 3: target is in the range of the array, and there is a target in the array, for example, array {3,6,7}, target is 6, then it should return {1, 1}.
+
+Three steps:
+Finding the right boundary, 
+finding the left boundary, 
+and dealing with the three cases.
 
 
 
