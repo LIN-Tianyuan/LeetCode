@@ -25,6 +25,22 @@ Space complexity: O(1)
 ### 2. Search Insert Position(35)
 Given a sorted array of distinct integers and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.
 
+#### Idea
+Target value comes before all elements of the array
+Target value is equal to an element of the array
+The target value is inserted into the array
+Target value after all elements of the array
+
+#### Code
+Time complexity: O(log n)
+Space complexity: O(1)
+
+### 3. Find First and Last Position of Element in Sorted Array(34)
+
+Given an array of integers nums sorted in non-decreasing order, find the starting and ending position of a given target value.
+
+If target is not found in the array, return [-1, -1].
+
 
 
 
