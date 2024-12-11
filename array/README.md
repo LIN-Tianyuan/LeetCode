@@ -53,8 +53,27 @@ Finding the right boundary,
 finding the left boundary, 
 and dealing with the three cases.
 
+### 4. Remove Element
 
+Given an integer array nums and an integer val, remove all occurrences of val in nums in-place. The order of the elements may be changed. Then return the number of elements in nums which are not equal to val.
 
+Consider the number of elements in nums which are not equal to val be k, to get accepted, you need to do the following things:
+
+ - Change the array nums such that the first k elements of nums contain the elements which are not equal to val. The remaining elements of nums are not important as well as the size of nums.
+ - Return k.
+
+#### Idea
+
+Dual pointer method (fast and slow pointer method): A fast pointer and a slow pointer in a for loop to complete the work of two for loops.
+
+Define fast and slow pointers:
+
+ - Fast pointer: looks for an element of the new array that does not contain the target element.
+ - Slow pointer: points to the location where the subscript of the new array is updated.
+
+#### Code
+Time complexity: O(n)
+Space complexity: O(1)
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
